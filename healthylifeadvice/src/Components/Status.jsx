@@ -29,7 +29,7 @@ export default function Status({onClose,isOpen}) {
           <ModalCloseButton />
           <ModalBody p="5%" fontSize="12px" alignItems="center">
           {
-                loading?<Heading fontSize="md">Please Wait! We Are Generating Response...</Heading>:error?<Heading>Error While Submitting the Response Please Try Again</Heading>:<Text>{status}</Text>
+                loading?<Heading fontSize="md">Please Wait! We Are Generating Response...</Heading>:error?<Heading fontSize="large" >Error While Submitting the Response Please Try Again</Heading>:<Text>{status}</Text>
             }
           </ModalBody>
 

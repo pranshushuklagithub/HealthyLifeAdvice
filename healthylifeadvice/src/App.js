@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+
 import './App.css';
 import HealthAdvice1 from "./HealthAdvice1.svg"
 import { Heading,Box,Image,Text, Input, Button,Link, useDisclosure } from '@chakra-ui/react';
@@ -25,11 +25,11 @@ function App() {
       <Image id='cover-image'  src={HealthAdvice1} alt='HealthAdvice'></Image>
       <Box id="input-form">
           <span className="label">1. How are You feeling right now?</span>
-          <Input  type='text' name='feelingRightNow' onChange={(e)=>{setUserInput({...userInput,[e.target.name]:e.target.value})}}/>
+          <Input  type='text' name='feelingRightNow' placeholder='Type Here...' onChange={(e)=>{setUserInput({...userInput,[e.target.name]:e.target.value})}}/>
           <span className="label">2. What do you do?</span>
-          <Input type='text' name='profession' onChange={(e)=>{setUserInput({...userInput,[e.target.name]:e.target.value})}}/>
+          <Input type='text' name='profession' placeholder='Type Here...' onChange={(e)=>{setUserInput({...userInput,[e.target.name]:e.target.value})}}/>
           <span className="label">3. What are the issues you're facing today?</span>
-          <Input type='text' name='issues' onChange={(e)=>{setUserInput({...userInput,[e.target.name]:e.target.value})}}/>
+          <Input type='text' name='issues' placeholder='Type Here...' onChange={(e)=>{setUserInput({...userInput,[e.target.name]:e.target.value})}}/>
           <Button _hover={{backgroundColor:"teal.200",color:"black"}} colorScheme="teal" variant="outline" onClick={()=>{disptach(handlePostRequest(userInput))
             onOpen()}}>Get Advice</Button>
       </Box>

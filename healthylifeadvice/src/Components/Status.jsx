@@ -2,7 +2,7 @@ import React from 'react'
 import {Modal,ModalOverlay,ModalContent,ModalHeader,ModalFooter,ModalBody,ModalCloseButton,Button, Heading,Text} from '@chakra-ui/react'
 import {useSelector} from "react-redux"
 
-export default function ({onClose,isOpen}) {
+export default function Status({onClose,isOpen}) {
 
     const loading = useSelector((store)=>{
         return store.loading;

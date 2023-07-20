@@ -1,5 +1,8 @@
+
+
 .App {
   text-align: center;
+  padding: 5%;
 }
 
 .App-logo {
@@ -37,12 +40,199 @@
   }
 }
 
-body {
-  background-image: url("./Images/HealthAdvice3.svg");
-
-  height: 100%;
-  width: 100%;
-
-  background-position: center;
-  background-size: cover;
+#parent-container{
+  width: 70%;
+  margin: auto;
 }
+#cover-image {
+  width: 100%;
+  height: 100%;
+}
+
+#title {
+  font-size: 50px;
+  margin-bottom: 2%;
+}
+.text {
+  font-size: large;
+  margin-bottom: 3%;
+}
+
+#input-form {
+  width: 50%;
+  margin-left:50% ;
+  margin-top: -60%;
+  text-align: left;
+  padding: 1%;
+}
+
+
+button {
+  margin-top: 4%;
+  margin-left: 76%;
+}
+
+input {
+  margin-bottom: 2%;
+}
+
+#featured-meditation {
+    margin-top: 35%;
+    width: 100%;
+    text-align: left;
+    padding: 5%;
+}
+#card {
+  height: 250px;
+  margin-bottom: 2%;
+  margin-top: 3%;
+  text-align: left;
+  align-items: center;
+}
+
+#card > img {
+  width: 350px;
+  height: 100%;
+}
+
+.card-headings{
+  font-weight: bold;
+}
+
+#final-description {
+  font-size: 12px;
+  width: 30%;
+  margin: auto;
+}
+
+/* Mobile Responsiveness */
+
+@media  screen and (max-width: 480px) {
+
+  #parent-container{
+    width: 100%;
+    margin: auto;
+  }
+  .label {
+    font-size: 13px;
+    font-weight: 600;
+  }
+
+  #title {
+    font-size: 20px;
+    margin-bottom: 1%;
+  }
+  .text {
+    font-size: 10px;
+    margin-bottom: 2%;
+  }
+  #input-form {
+    width: 60%;
+    margin-left:40% ;
+    margin-top: -60%;
+    text-align: left;
+  }
+  button {
+    margin-top: 4%;
+    margin:auto;
+    width: 100px;
+  }
+
+  input {
+    margin-bottom: 1%;
+  }
+
+  #card {
+    height: 350px;
+    margin-bottom: 2%;
+    margin-top: 3%;
+    text-align: left;
+    font-size: 12px;
+    align-items: center;
+    justify-content: left;
+  }
+  #card > img {
+    width: 100%;
+    height: 150px;
+  }
+  #card-btn {
+    width: 50px;
+    height: 30px;
+    margin-top: 3%;
+  }
+  #final-description {
+    font-size: 10px;
+    width: 80%;
+    margin: auto;
+  }
+
+}
+
+/* Tab Responsiveness */
+
+
+@media  (min-width: 481px)  and (max-width: 768px) {
+
+  #parent-container{
+    width: 100%;
+    margin: auto;
+  }
+  .label {
+    font-size: 17px;
+    font-weight: 600;
+  }
+
+  #title {
+    font-size: 30px;
+    margin-bottom: 1%;
+  }
+  .text {
+    font-size: 15px;
+    margin-bottom: 2%;
+  }
+  #input-form {
+    width: 80%;
+    margin-left:20% ;
+    margin-top: -60%;
+    text-align: left;
+  }
+  button {
+    margin-top: 4%;
+    margin:auto;
+    width: 90px;
+  }
+
+
+  input {
+    margin-bottom: 1%;
+  }
+
+  #card {
+    height: 250px;
+    margin-bottom: 2%;
+    margin-top: 3%;
+    text-align: left;
+    font-size: 12px;
+    align-items: center;
+    justify-content: left;
+  }
+  #card > img {
+    width: 350px;
+    height: 100%;
+  }
+  #card-btn {
+    width: 70px;
+    height: 30px;
+    margin-top: 3%;
+  }
+
+  #final-description {
+    font-size: 12px;
+    width: 80%;
+    margin: auto;
+  }
+
+}
+
+
+

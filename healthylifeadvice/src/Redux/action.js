@@ -13,11 +13,11 @@ export const  handlePostRequest = ({feelingRightNow,profession,issues})=>{
         dispatch({type:"LOADING",payload:true})
         await axios.post("https://gpt-api.richexplorer.com/api/general",userData)
         .then((res)=>{
-        // console.log(res.data)
+        console.log(res.data)
         dispatch({type:"STATUS",payload:res.data})
         }).catch((error)=>{
         console.log(error)
-        // alert("Please Use Cors Unblocker Extension While Submitting The Querries")
+        alert("Please Use Cors Unblocker Extension While Submitting The Querries")
         dispatch({type:"STATUS_ERROR"})
         })
     dispatch({type:"LOADING",payload:false})

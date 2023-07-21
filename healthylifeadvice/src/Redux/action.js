@@ -17,6 +17,7 @@ export const  handlePostRequest = ({feelingRightNow,profession,issues})=>{
         dispatch({type:"STATUS",payload:res.data})
         }).catch((error)=>{
         console.log(error)
+        alert("Please Use Cors Unblocker Extension While Submitting The Querries")
         dispatch({type:"STATUS_ERROR"})
         })
     dispatch({type:"LOADING",payload:false})
